@@ -3138,6 +3138,20 @@
 #define USE_SERIAL_TELEMETRY
 #endif
 
+// Make by Taiphoon
+#ifdef  MORAKOT_4IN1_ESC_60A_G071
+#define FILE_NAME "MORAKOT_4IN1_ESC_60A_G071"
+#define FIRMWARE_NAME "MORAKOT_60A" // Firmname
+#define DRONECAN_SUPPORT 1 // Add DroneCAN support
+#define DRONECAN_NODE_NAME "Taiphoon.Morakot_60A" // Add DroneCAN node name
+#define DEAD_TIME 45 // 
+#define HARDWARE_GROUP_G0_K // Hardware group
+#define TARGET_VOLTAGE_DIVIDER 110 // Voltage divider
+#define MILLIVOLT_PER_AMP 10
+#define CURRENT_OFFSET 0
+#define USE_SERIAL_TELEMETRY
+#endif
+
 /********************************** F031 Targets
  * ***********************************/
 
