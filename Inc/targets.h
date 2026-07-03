@@ -295,6 +295,19 @@
 #define USE_SERIAL_TELEMETRY
 #endif
 
+// Made by Taiphoon
+#ifdef MORAKOT_4IN1_ESC_60A_L431_CAN
+#define DRONECAN_NODE_NAME "Taiphoon.canesc"
+#define FIRMWARE_NAME "tp.canesc"
+#define FILE_NAME "MORAKOT_4IN1_ESC_60A_L431_CAN"
+#define DRONECAN_SUPPORT 1
+#define DEAD_TIME 110
+#define HARDWARE_GROUP_L4_B
+#define TARGET_VOLTAGE_DIVIDER 210
+#define MILLIVOLT_PER_AMP 50
+#define USE_SERIAL_TELEMETRY
+#endif
+
 #ifdef  REF_L431_CAN
 #define FILE_NAME				"REF_L431_CAN"
 #define FIRMWARE_NAME           "L431 CAN"
@@ -3142,8 +3155,6 @@
 #ifdef  MORAKOT_4IN1_ESC_60A_G071
 #define FILE_NAME "MORAKOT_4IN1_ESC_60A_G071"
 #define FIRMWARE_NAME "MORAKOT_60A" // Firmname
-#define DRONECAN_SUPPORT 1 // Add DroneCAN support
-#define DRONECAN_NODE_NAME "Taiphoon.Morakot_60A" // Add DroneCAN node name
 #define DEAD_TIME 45 // 
 #define HARDWARE_GROUP_G0_K // Hardware group
 #define TARGET_VOLTAGE_DIVIDER 110 // Voltage divider
@@ -3152,9 +3163,7 @@
 #define USE_SERIAL_TELEMETRY
 #endif
 
-/********************************** F031 Targets
- * ***********************************/
-
+/********************************** F031 Targets ************************************/
 #ifdef REF_F031
 #define FILE_NAME "REF_F031"
 #define FIRMWARE_NAME "F031 Ref ESC"
